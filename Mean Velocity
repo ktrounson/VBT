@@ -1,0 +1,1495 @@
+"Block1Avg" <- read.csv("Block1columnar_repStatisticsTableAvg.csv")
+"Block2Avg" <- read.csv("Block2columnar_repStatisticsTableAvg.csv")
+"Block3Avg" <- read.csv("Block3columnar_repStatisticsTableAvg.csv")
+
+#Jan VBT: 08/02/2021
+
+#Mar VBT: 05/04/2021
+
+#June VBT: 23/06/2021
+
+BedendoB2 <- Block2Avg %>% filter(last.name == "Bedendo")
+BedendoB2 <- BedendoB2 %>% filter(bar.weight..kg. >= 87.5, bar.weight..kg. <= 97.5)
+
+BedendoB3 <- Block3Avg %>% filter(last.name == "Bedendo")
+BedendoB3 <- BedendoB3 %>% filter(bar.weight..kg. >= 97.5, bar.weight..kg. <= 107.5)
+#Mar 87.5-97.5, Jun 97.5-107.5
+
+BontempelliB1 <- Block1Avg %>% filter(last.name == "Bontempelli")
+BontempelliB1 <- BontempelliB1 %>% filter(bar.weight..kg. >= 117.5, bar.weight..kg. <= 127.5)
+
+BontempelliB2 <- Block2Avg %>% filter(last.name == "Bontempelli")
+BontempelliB2 <- BontempelliB2 %>% filter(bar.weight..kg. >= 135, bar.weight..kg. <= 145)
+
+BontempelliB3 <- Block3Avg %>% filter(last.name == "Bontempelli")
+BontempelliB3 <- BontempelliB3 %>% filter(bar.weight..kg. >= 155, bar.weight..kg. <= 165)
+
+#Jan 117.5-127.5, Mar 135-145, Jun 155-165
+
+ButlerB2 <- Block2Avg %>% filter(last.name == "Butler")
+ButlerB2 <- ButlerB2 %>% filter(bar.weight..kg. >= 92.5, bar.weight..kg. <= 102.5)
+
+ButlerB3 <- Block3Avg %>% filter(last.name == "Butler")
+ButlerB3 <- ButlerB3 %>% filter(bar.weight..kg. >= 92.5, bar.weight..kg. <= 102.5)
+#Mar 92.5-102.5, Jun 92.5-102.5
+
+CavarraB1 <- Block1Avg %>% filter(last.name == "Cavarra")
+CavarraB1 <- CavarraB1 %>% filter(bar.weight..kg. >= 112.5, bar.weight..kg. <= 122.5)
+
+CavarraB2 <- Block2Avg %>% filter(last.name == "Cavarra")
+CavarraB2 <- CavarraB2 %>% filter(bar.weight..kg. >= 132.5, bar.weight..kg. <= 142.5)
+
+CavarraB3 <- Block3Avg %>% filter(last.name == "Cavarra")
+CavarraB3 <- CavarraB3 %>% filter(bar.weight..kg. >= 135, bar.weight..kg. <= 145)
+#Jan 112.5-122.5, Mar 132.5-142.5, Jun 135-145
+
+CordyB1 <- Block1Avg %>% filter(last.name == "Cordy")
+CordyB1 <- CordyB1 %>% filter(bar.weight..kg. >= 110, bar.weight..kg. <= 120)
+
+CordyB2 <- Block2Avg %>% filter(last.name == "Cordy")
+CordyB2 <- CordyB2 %>% filter(bar.weight..kg. >= 125, bar.weight..kg. <= 135)
+
+CordyB3 <- Block3Avg %>% filter(last.name == "Cordy")
+CordyB3 <- CordyB3 %>% filter(bar.weight..kg. >= 132.5, bar.weight..kg. <= 142.5)
+#Jan 110-120, Mar 125-135, Jun 132.5-142.5
+
+CrozierB1 <- Block1Avg %>% filter(last.name == "Crozier")
+CrozierB1 <- CrozierB1 %>% filter(bar.weight..kg. >= 135, bar.weight..kg. <= 145)
+
+CrozierB2 <- Block2Avg %>% filter(last.name == "Crozier")
+CrozierB2 <- CrozierB2 %>% filter(bar.weight..kg. >= 135, bar.weight..kg. <= 145)
+
+CrozierB3 <- Block3Avg %>% filter(last.name == "Crozier")
+CrozierB3 <- CrozierB3 %>% filter(bar.weight..kg. >= 162.5, bar.weight..kg. <= 172.5)
+#Jan 135-145, Mar 135-145, Jun 162.5-172.5
+
+DaleB1 <- Block1Avg %>% filter(last.name == "Dale")
+DaleB1 <- DaleB1 %>% filter(bar.weight..kg. >= 57.5, bar.weight..kg. <= 67.5)
+
+DaleB2 <- Block2Avg %>% filter(last.name == "Dale")
+DaleB2 <- DaleB2 %>% filter(bar.weight..kg. >= 52.5, bar.weight..kg. <= 62.5)
+
+DaleB3 <- Block3Avg %>% filter(last.name == "Dale")
+DaleB3 <- DaleB3 %>% filter(bar.weight..kg. >= 52.5, bar.weight..kg. <= 62.5)
+#Jan 57.5-67.5, Mar 52.5-62.5, Jun 52.5-62.5
+
+DanielB1 <- Block1Avg %>% filter(last.name == "Daniel")
+DanielB1 <- DanielB1 %>% filter(bar.weight..kg. >= 105, bar.weight..kg. <= 115)
+
+DanielB2 <- Block2Avg %>% filter(last.name == "Daniel")
+DanielB2 <- DanielB2 %>% filter(bar.weight..kg. >= 132.5, bar.weight..kg. <= 142.5)
+
+DanielB3 <- Block3Avg %>% filter(last.name == "Daniel")
+DanielB3 <- DanielB3 %>% filter(bar.weight..kg. >= 132.5, bar.weight..kg. <= 142.5)
+#Jan 105-115, Mar 132.5-142.5, Jun 132.5-142.5
+
+DunkleyB1 <- Block1Avg %>% filter(last.name == "Dunkley")
+DunkleyB1 <- DunkleyB1 %>% filter(bar.weight..kg. >= 115, bar.weight..kg. <= 125)
+
+DunkleyB2 <- Block2Avg %>% filter(last.name == "Dunkley")
+DunkleyB2 <- DunkleyB2 %>% filter(bar.weight..kg. >= 115, bar.weight..kg. <= 125)
+
+DunkleyB3 <- Block3Avg %>% filter(last.name == "Dunkley")
+DunkleyB3 <- DunkleyB3 %>% filter(bar.weight..kg. >= 115, bar.weight..kg. <= 125)
+#Jan 115-125, Mar 115-125, Jun 115-120
+
+DuryeaB2 <- Block2Avg %>% filter(last.name == "Duryea")
+DuryeaB2 <- DuryeaB2 %>% filter(bar.weight..kg. >= 117.5, bar.weight..kg. <= 127.5)
+
+DuryeaB3 <- Block3Avg %>% filter(last.name == "Duryea")
+DuryeaB3 <- DuryeaB3 %>% filter(bar.weight..kg. >= 117.5, bar.weight..kg. <= 127.5)
+#Mar 117.5-127.5, Jun 117.5-127.5
+
+EnglishB1 <- Block1Avg %>% filter(last.name == "English")
+EnglishB1 <- EnglishB1 %>% filter(bar.weight..kg. >= 125, bar.weight..kg. <= 135)
+
+EnglishB2 <- Block2Avg %>% filter(last.name == "English")
+EnglishB2 <- EnglishB2 %>% filter(bar.weight..kg. >= 117.5, bar.weight..kg. <= 127.5)
+
+EnglishB3 <- Block3Avg %>% filter(last.name == "English")
+EnglishB3 <- EnglishB3 %>% filter(bar.weight..kg. >= 135, bar.weight..kg. <= 145)
+#Jan 125-135, Mar 117.5-127.5, Jun 135-145
+
+GarciaB2 <- Block2Avg %>% filter(last.name == "Garcia")
+GarciaB2 <- GarciaB2 %>% filter(bar.weight..kg. >= 115, bar.weight..kg. <= 125)
+
+GarciaB3 <- Block3Avg %>% filter(last.name == "Garcia")
+GarciaB3 <- GarciaB3 %>% filter(bar.weight..kg. >= 115, bar.weight..kg. <= 125)
+#Mar 115-125, Jun 115-125
+
+GardnerB1 <- Block1Avg %>% filter(last.name == "Gardner")
+GardnerB1 <- GardnerB1 %>% filter(bar.weight..kg. >= 155, bar.weight..kg. <= 165)
+
+GardnerB2 <- Block2Avg %>% filter(last.name == "Gardner")
+GardnerB2 <- GardnerB2 %>% filter(bar.weight..kg. >= 160, bar.weight..kg. <= 170)
+
+GardnerB3 <- Block3Avg %>% filter(last.name == "Gardner")
+GardnerB3 <- GardnerB3 %>% filter(bar.weight..kg. >= 162.5, bar.weight..kg. <= 172.5)
+#Jan 155-165, Mar 160-170, Jun 162.5-172.5
+
+HannanB3 <- Block3Avg %>% filter(last.name == "Hannan")
+HannanB3 <- HannanB3 %>% filter(bar.weight..kg. >= 125, bar.weight..kg. <= 135)
+#Jun 125-130
+
+HayesB1 <- Block1Avg %>% filter(last.name == "Hayes")
+HayesB1 <- HayesB1 %>% filter(bar.weight..kg. >= 115, bar.weight..kg. <= 125)
+
+HayesB2 <- Block2Avg %>% filter(last.name == "Hayes")
+HayesB2 <- HayesB2 %>% filter(bar.weight..kg. >= 107.5, bar.weight..kg. <= 117.5)
+
+HayesB3 <- Block3Avg %>% filter(last.name == "Hayes")
+HayesB3 <- HayesB3 %>% filter(bar.weight..kg. >= 120, bar.weight..kg. <= 130)
+#Jan 115-125, Mar 107.5-117.5, Jun 120-130
+
+JohannisenB1 <- Block1Avg %>% filter(last.name == "Johannissen")
+JohannisenB1 <- JohannisenB1 %>% filter(bar.weight..kg. >= 132.5, bar.weight..kg. <= 142.5)
+
+JohannisenB2 <- Block2Avg %>% filter(last.name == "Johannissen")
+JohannisenB2 <- JohannisenB2 %>% filter(bar.weight..kg. >= 135, bar.weight..kg. <= 145)
+
+JohannisenB3 <- Block3Avg %>% filter(last.name == "Johannissen")
+JohannisenB3 <- JohannisenB3 %>% filter(bar.weight..kg. >= 135, bar.weight..kg. <= 145)
+#Jan 132.5-142.5, Mar 135-145, Jun 135-145
+
+JongB1 <- Block1Avg %>% filter(last.name == "Jong")
+JongB1 <- JongB1 %>% filter(bar.weight..kg. >= 167.5, bar.weight..kg. <= 177.5)
+#Jan 170-175
+
+KeathB1 <- Block1Avg %>% filter(last.name == "Keath")
+KeathB1 <- KeathB1 %>% filter(bar.weight..kg. >= 115, bar.weight..kg. <= 125)
+
+KeathB2 <- Block2Avg %>% filter(last.name == "Keath")
+KeathB2 <- KeathB2 %>% filter(bar.weight..kg. >= 117.5, bar.weight..kg. <= 127.5)
+
+KeathB3 <- Block3Avg %>% filter(last.name == "Keath")
+KeathB3 <- KeathB3 %>% filter(bar.weight..kg. >= 117.5, bar.weight..kg. <= 127.5)
+#Jan 115-125, Mar 117.5-127.5, Jun 115-125
+
+KhamisB1 <- Block1Avg %>% filter(last.name == "Khamis")
+KhamisB1 <- KhamisB1 %>% filter(bar.weight..kg. >= 110, bar.weight..kg. <= 120)
+
+KhamisB2 <- Block2Avg %>% filter(last.name == "Khamis")
+KhamisB2 <- KhamisB2 %>% filter(bar.weight..kg. >= 132.5, bar.weight..kg. <= 142.5)
+
+KhamisB3 <- Block3Avg %>% filter(last.name == "Khamis")
+KhamisB3 <- KhamisB3 %>% filter(bar.weight..kg. >= 152.5, bar.weight..kg. <= 162.5)
+#Jan 110-120, Mar 132.5-142.5, Jun 152.5-162.5
+
+LiberatoreB1 <- Block1Avg %>% filter(last.name == "Liberatore")
+LiberatoreB1 <- LiberatoreB1 %>% filter(bar.weight..kg. >= 95, bar.weight..kg. <= 105)
+
+LiberatoreB2 <- Block2Avg %>% filter(last.name == "Liberatore")
+LiberatoreB2 <- LiberatoreB2 %>% filter(bar.weight..kg. >= 92.5, bar.weight..kg. <= 102.5)
+
+LiberatoreB3 <- Block3Avg %>% filter(last.name == "Liberatore")
+LiberatoreB3 <- LiberatoreB3 %>% filter(bar.weight..kg. >= 102.5, bar.weight..kg. <= 112.5)
+#Jan 95-105, Mar 92.5-102.5, Jun 102.5-112.5
+
+LipinskiB1 <- Block1Avg %>% filter(last.name == "Lipinski")
+LipinskiB1 <- LipinskiB1 %>% filter(bar.weight..kg. >= 97.5, bar.weight..kg. <= 107.5)
+
+LipinskiB2 <- Block2Avg %>% filter(last.name == "Lipinski")
+LipinskiB2 <- LipinskiB2 %>% filter(bar.weight..kg. >= 77.5, bar.weight..kg. <= 87.5)
+
+LipinskiB3 <- Block3Avg %>% filter(last.name == "Lipinski")
+LipinskiB3 <- LipinskiB3 %>% filter(bar.weight..kg. >= 77.5, bar.weight..kg. <= 87.5)
+#Jan 97.5-107.5, Mar 77.5-87.5, Jun 77.5-87.5
+
+MartinB1 <- Block1Avg %>% filter(last.name == "Martin")
+MartinB1 <- MartinB1 %>% filter(bar.weight..kg. >= 135, bar.weight..kg. <= 145)
+
+MartinB2 <- Block2Avg %>% filter(last.name == "Martin")
+MartinB2 <- MartinB2 %>% filter(bar.weight..kg. >= 132.5, bar.weight..kg. <= 142.5)
+
+MartinB3 <- Block3Avg %>% filter(last.name == "Martin")
+MartinB3 <- MartinB3 %>% filter(bar.weight..kg. >= 132.5, bar.weight..kg. <= 142.5)
+#Jan 135-145, Mar 132.5-142.5, Jun 132.5-142.5
+
+McleanB3 <- Block3Avg %>% filter(last.name == "McLean")
+McleanB3 <- McleanB3 %>% filter(bar.weight..kg. >= 112.5, bar.weight..kg. <= 122.5)
+#Jun 112.5-122.5
+
+McNeilB2 <- Block2Avg %>% filter(last.name == "McNeil")
+McNeilB2 <- McNeilB2 %>% filter(bar.weight..kg. >= 82.5, bar.weight..kg. <= 92.5)
+
+McNeilB3 <- Block3Avg %>% filter(last.name == "McNeil")
+McNeilB3 <- McNeilB3 %>% filter(bar.weight..kg. >= 102.5, bar.weight..kg. <= 112.5)
+#Mar 82.5-92.5, Jun 105-110
+
+NaughtonB1 <- Block1Avg %>% filter(last.name == "Naughton")
+NaughtonB1 <- NaughtonB1 %>% filter(bar.weight..kg. >= 120, bar.weight..kg. <= 130)
+
+NaughtonB2 <- Block2Avg %>% filter(last.name == "Naughton")
+NaughtonB2 <- NaughtonB2 %>% filter(bar.weight..kg. >= 112.5, bar.weight..kg. <= 122.5)
+
+NaughtonB3 <- Block3Avg %>% filter(last.name == "Naughton")
+NaughtonB3 <- NaughtonB3 %>% filter(bar.weight..kg. >= 112.5, bar.weight..kg. <= 122.5)
+#Jan 120-130, Mar 112.5-122.5, Jun 112.5-122.5
+
+RichardsB1 <- Block1Avg %>% filter(last.name == "Richards")
+RichardsB1 <- RichardsB1 %>% filter(bar.weight..kg. >= 120, bar.weight..kg. <= 130)
+
+RichardsB2 <- Block2Avg %>% filter(last.name == "Richards")
+RichardsB2 <- RichardsB2 %>% filter(bar.weight..kg. >= 125, bar.weight..kg. <= 135)
+
+RichardsB3 <- Block3Avg %>% filter(last.name == "Richards")
+RichardsB3 <- RichardsB3 %>% filter(bar.weight..kg. >= 125, bar.weight..kg. <= 135)
+#Jan 120-130, Mar 125-135, Jun 125-135
+
+SchacheB1 <- Block1Avg %>% filter(last.name == "Schache")
+SchacheB1 <- SchacheB1 %>% filter(bar.weight..kg. >= 102.5, bar.weight..kg. <= 112.5)
+
+SchacheB2 <- Block2Avg %>% filter(last.name == "Schache")
+SchacheB2 <- SchacheB2 %>% filter(bar.weight..kg. >= 110, bar.weight..kg. <= 120)
+
+SchacheB3 <- Block3Avg %>% filter(last.name == "Schache")
+SchacheB3 <- SchacheB3 %>% filter(bar.weight..kg. >= 117.5, bar.weight..kg. <= 127.5)
+#Jan 102.5-112.5, Mar 110-120, Jun 117.5-127.5
+
+ScottB2 <- Block2Avg %>% filter(last.name == "Scott")
+ScottB2 <- ScottB2 %>% filter(bar.weight..kg. >= 77.5, bar.weight..kg. <= 87.5)
+
+ScottB3 <- Block3Avg %>% filter(last.name == "Scott")
+ScottB3 <- ScottB3 %>% filter(bar.weight..kg. >= 105, bar.weight..kg. <= 115)
+#Mar 77.5-87.5, Jun 105-115
+
+SmithB1 <- Block1Avg %>% filter(last.name == "Smith")
+SmithB1 <- SmithB1 %>% filter(bar.weight..kg. >= 115, bar.weight..kg. <= 125)
+
+SmithB2 <- Block2Avg %>% filter(last.name == "Smith")
+SmithB2 <- SmithB2 %>% filter(bar.weight..kg. >= 130, bar.weight..kg. <= 140)
+
+SmithB3 <- Block3Avg %>% filter(last.name == "Smith")
+SmithB3 <- SmithB3 %>% filter(bar.weight..kg. >= 130, bar.weight..kg. <= 140)
+#Jan 115-120, Mar 130-140, Jun 130-140
+
+SweetB2 <- Block2Avg %>% filter(last.name == "Sweet")
+SweetB2 <- SweetB2 %>% filter(bar.weight..kg. >= 102.5, bar.weight..kg. <= 112.5)
+
+SweetB3 <- Block3Avg %>% filter(last.name == "Sweet")
+SweetB3 <- SweetB3 %>% filter(bar.weight..kg. >= 120, bar.weight..kg. <= 130)
+#Mar 102.5-112.5, Jun 120-130
+
+TreloarB1 <- Block1Avg %>% filter(last.name == "Treloar")
+TreloarB1 <- TreloarB1 %>% filter(bar.weight..kg. >= 185, bar.weight..kg. <= 195)
+
+TreloarB2 <- Block2Avg %>% filter(last.name == "Treloar")
+TreloarB2 <- TreloarB2 %>% filter(bar.weight..kg. >= 150, bar.weight..kg. <= 160)
+
+TreloarB3 <- Block3Avg %>% filter(last.name == "Treloar")
+TreloarB3 <- TreloarB3 %>% filter(bar.weight..kg. >= 150, bar.weight..kg. <= 160)
+#Jan 185-195, Mar 150-160, Jun 150-160
+
+Ugle_HaganB2 <- Block2Avg %>% filter(last.name == "Ugle-Hagan")
+Ugle_HaganB2 <- Ugle_HaganB2 %>% filter(bar.weight..kg. >= 95, bar.weight..kg. <= 105)
+
+Ugle_HaganB3 <- Block3Avg %>% filter(last.name == "Ugle-Hagan")
+Ugle_HaganB3 <- Ugle_HaganB3 %>% filter(bar.weight..kg. >= 125, bar.weight..kg. <= 135)
+#Mar 95-105, Jun 125-135
+
+VandermeerB1 <- Block1Avg %>% filter(last.name == "Vandermeer")
+VandermeerB1 <- VandermeerB1 %>% filter(bar.weight..kg. >= 105, bar.weight..kg. <= 115)
+
+VandermeerB2 <- Block2Avg %>% filter(last.name == "Vandermeer")
+VandermeerB2 <- VandermeerB2 %>% filter(bar.weight..kg. >= 105, bar.weight..kg. <= 115)
+
+VandermeerB3 <- Block3Avg %>% filter(last.name == "Vandermeer")
+VandermeerB3 <- VandermeerB3 %>% filter(bar.weight..kg. >= 105, bar.weight..kg. <= 115)
+#Jan 105-115, Mar 105-115, Jun 105-115
+
+WeightmanB2 <- Block2Avg %>% filter(last.name == "Weightman")
+WeightmanB2 <- WeightmanB2 %>% filter(bar.weight..kg. >= 105, bar.weight..kg. <= 115)
+
+WeightmanB3 <- Block3Avg %>% filter(last.name == "Weightman")
+WeightmanB3 <- WeightmanB3 %>% filter(bar.weight..kg. >= 92.5, bar.weight..kg. <= 102.5)
+#Mar 105-115, Jun 92.5-102.5
+
+WestB1 <- Block1Avg %>% filter(last.name == "West")
+WestB1 <- WestB1 %>% filter(bar.weight..kg. >= 92.5, bar.weight..kg. <= 102.5)
+
+WestB2 <- Block2Avg %>% filter(last.name == "West")
+WestB2 <- WestB2 %>% filter(bar.weight..kg. >= 115, bar.weight..kg. <= 125)
+
+WestB3 <- Block3Avg %>% filter(last.name == "West")
+WestB3 <- WestB3 %>% filter(bar.weight..kg. >= 112.5, bar.weight..kg. <= 122.5)
+#Jan 92.5-102.5, Mar 115-125, Jun 112.5-122.5
+
+WilliamsB1 <- Block1Avg %>% filter(last.name == "Williams")
+WilliamsB1 <- WilliamsB1 %>% filter(bar.weight..kg. >= 102.5, bar.weight..kg. <= 112.5)
+
+WilliamsB2 <- Block2Avg %>% filter(last.name == "Williams")
+WilliamsB2 <- WilliamsB2 %>% filter(bar.weight..kg. >= 132.5, bar.weight..kg. <= 142.5)
+
+WilliamsB3 <- Block3Avg %>% filter(last.name == "Williams")
+WilliamsB3 <- WilliamsB3 %>% filter(bar.weight..kg. >= 140, bar.weight..kg. <= 150)
+#Jan 102.5-112.5, Mar 132.5-142.5, Jun 140-150
+
+WoodB2 <- Block2Avg %>% filter(last.name == "Wood")
+WoodB2 <- WoodB2 %>% filter(bar.weight..kg. >= 105, bar.weight..kg. <= 115)
+
+WoodB3 <- Block3Avg %>% filter(last.name == "Wood")
+WoodB3 <- WoodB3 %>% filter(bar.weight..kg. >= 105, bar.weight..kg. <= 115)
+#Mar 105-115, Jun 105-115
+
+YoungB1 <- Block1Avg %>% filter(last.name == "Young")
+YoungB1 <- YoungB1 %>% filter(bar.weight..kg. >= 110, bar.weight..kg. <= 120)
+
+YoungB2 <- Block2Avg %>% filter(last.name == "Young")
+YoungB2 <- YoungB2 %>% filter(bar.weight..kg. >= 135, bar.weight..kg. <= 145)
+
+YoungB3 <- Block3Avg %>% filter(last.name == "Young")
+YoungB3 <- YoungB3 %>% filter(bar.weight..kg. >= 130, bar.weight..kg. <= 140)
+#Jan 110-120, Mar 130-140, Jun 130-140
+
+#Bedendo
+#Mar 87.5-97.5, Jun 97.5-107.5
+BedendoB2 <- BedendoB2[BedendoB2$Conc.Mean.Velocity != 0.22, ]
+BedendoB3 <- BedendoB3[BedendoB3$Conc.Mean.Velocity != 0.39, ]
+Bedendomean <- rbind.data.frame(BedendoB2, BedendoB3)
+mean(Bedendomean$Conc.Mean.Velocity)
+mean(Bedendomean$Conc.Mean.Velocity) + 1.5*sd(Bedendomean$Conc.Mean.Velocity)
+mean(Bedendomean$Conc.Mean.Velocity) - 1.5*sd(Bedendomean$Conc.Mean.Velocity)
+
+BedendoB2$date = as.Date(BedendoB2$date, format = "%d/%m/%y")
+BedendoB3$date = as.Date(BedendoB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = BedendoB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = BedendoB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("87.5-97.5 kg","97.5-107.5 kg"),
+                     values=c("blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7857143) +
+  geom_hline(yintercept=0.7857143+0.08, color = "blue") +
+  geom_hline(yintercept=0.7857143-0.08, color = "blue") +
+  geom_hline(yintercept=0.9662629, color = "red") +
+  geom_hline(yintercept=0.6051657, color = "red") +
+  ggtitle("Bedendo set mean")
+
+#Bontempelli
+#Jan 117.5-127.5, Mar 135-145, Jun 155-165
+BontempelliB1 <- BontempelliB1[BontempelliB1$Conc.Mean.Velocity != 1.08, ]
+Bontempellimean <- rbind.data.frame(BontempelliB1, BontempelliB2, BontempelliB3)
+mean(Bontempellimean$Conc.Mean.Velocity)
+mean(Bontempellimean$Conc.Mean.Velocity) + 1.5*sd(Bontempellimean$Conc.Mean.Velocity)
+mean(Bontempellimean$Conc.Mean.Velocity) - 1.5*sd(Bontempellimean$Conc.Mean.Velocity)
+
+BontempelliB1$date = as.Date(BontempelliB1$date, format = "%d/%m/%y")
+BontempelliB2$date = as.Date(BontempelliB2$date, format = "%d/%m/%y")
+BontempelliB3$date = as.Date(BontempelliB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = BontempelliB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = BontempelliB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = BontempelliB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("117.5-127.5 kg","135-145 kg", "155-165 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7217391) +
+  geom_hline(yintercept=0.7217391+0.08, color = "blue") +
+  geom_hline(yintercept=0.7217391-0.08, color = "blue") +
+  geom_hline(yintercept=0.8632237, color = "red") +
+  geom_hline(yintercept=0.5802546, color = "red") +
+  ggtitle("Bontempelli set mean")
+
+#Butler
+#Mar 92.5-102.5, Jun 92.5-102.5
+Butlermean <- rbind.data.frame(ButlerB2, ButlerB3)
+mean(Butlermean$Conc.Mean.Velocity)
+mean(Butlermean$Conc.Mean.Velocity) + 1.5*sd(Butlermean$Conc.Mean.Velocity)
+mean(Butlermean$Conc.Mean.Velocity) - 1.5*sd(Butlermean$Conc.Mean.Velocity)
+
+ButlerB2$date = as.Date(ButlerB2$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = ButlerB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("92.5-102.5 kg"),
+                     values=c("blue")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.68375) +
+  geom_hline(yintercept=0.68375+0.08, color = "blue") +
+  geom_hline(yintercept=0.68375-0.08, color = "blue") +
+  geom_hline(yintercept=0.8242196, color = "red") +
+  geom_hline(yintercept=0.5432804, color = "red") +
+  ggtitle("Butler set mean")
+
+#Cavarra
+#Jan 112.5-122.5, Mar 132.5-142.5, Jun 135-145
+Cavarramean <- rbind.data.frame(CavarraB1, CavarraB2, CavarraB3)
+mean(Cavarramean$Conc.Mean.Velocity)
+mean(Cavarramean$Conc.Mean.Velocity) + 1.5*sd(Cavarramean$Conc.Mean.Velocity)
+mean(Cavarramean$Conc.Mean.Velocity) - 1.5*sd(Cavarramean$Conc.Mean.Velocity)
+
+CavarraB1$date = as.Date(CavarraB1$date, format = "%d/%m/%y")
+CavarraB2$date = as.Date(CavarraB2$date, format = "%d/%m/%y")
+CavarraB3$date = as.Date(CavarraB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = CavarraB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = CavarraB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = CavarraB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("112.5-122.5 kg","132.5-142.5 kg", "135-145 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.6744444) +
+  geom_hline(yintercept=0.6744444+0.08, color = "blue") +
+  geom_hline(yintercept=0.6744444-0.08, color = "blue") +
+  geom_hline(yintercept=0.7653549, color = "red") +
+  geom_hline(yintercept=0.583534, color = "red") +
+  ggtitle("Cavarra set mean")
+
+#Cordy
+#Jan 110-120, Mar 125-135, Jun 132.5-142.5
+CordyB1 <- CordyB1[CordyB1$Conc.Mean.Velocity != 0.30, ]
+Cordymean <- rbind.data.frame(CordyB1, CordyB2, CordyB3)
+mean(Cordymean$Conc.Mean.Velocity)
+mean(Cordymean$Conc.Mean.Velocity) + 1.5*sd(Cordymean$Conc.Mean.Velocity)
+mean(Cordymean$Conc.Mean.Velocity) - 1.5*sd(Cordymean$Conc.Mean.Velocity)
+
+CordyB1$date = as.Date(CordyB1$date, format = "%d/%m/%y")
+CordyB2$date = as.Date(CordyB2$date, format = "%d/%m/%y")
+CordyB3$date = as.Date(CordyB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = CordyB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = CordyB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = CordyB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("110-120 kg","125-135 kg","132.5-142.5 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.6648) +
+  geom_hline(yintercept=0.6648+0.08, color = "blue") +
+  geom_hline(yintercept=0.6648-0.08, color = "blue") +
+  geom_hline(yintercept=0.8156178, color = "red") +
+  geom_hline(yintercept=0.5139822, color = "red") +
+  ggtitle("Cordy set mean")
+
+#Crozier
+#Jan 135-145, Mar 135-145, Jun 162.5-172.5
+Croziermean <- rbind.data.frame(CrozierB1, CrozierB2, CrozierB3)
+mean(Croziermean$Conc.Mean.Velocity)
+mean(Croziermean$Conc.Mean.Velocity) + 1.5*sd(Croziermean$Conc.Mean.Velocity)
+mean(Croziermean$Conc.Mean.Velocity) - 1.5*sd(Croziermean$Conc.Mean.Velocity)
+
+CrozierB1$date = as.Date(CrozierB1$date, format = "%d/%m/%y")
+CrozierB2$date = as.Date(CrozierB2$date, format = "%d/%m/%y")
+CrozierB3$date = as.Date(CrozierB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = CrozierB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = CrozierB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = CrozierB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("135-145 kg","135-145 kg","162.5-172.5 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7033333) +
+  geom_hline(yintercept=0.7033333+0.08, color = "blue") +
+  geom_hline(yintercept=0.7033333-0.08, color = "blue") +
+  geom_hline(yintercept=0.904057, color = "red") +
+  geom_hline(yintercept=0.5026096, color = "red") +
+  ggtitle("Crozier set mean")
+
+
+#Dale
+#Jan 57.5-67.5, Mar 52.5-62.5, Jun 52.5-62.5
+Dalemean <- rbind.data.frame(DaleB2, DaleB3)
+mean(Dalemean$Conc.Mean.Velocity)
+mean(Dalemean$Conc.Mean.Velocity) + 1.5*sd(Dalemean$Conc.Mean.Velocity)
+mean(Dalemean$Conc.Mean.Velocity) - 1.5*sd(Dalemean$Conc.Mean.Velocity)
+
+DaleB2$date = as.Date(DaleB2$date, format = "%d/%m/%y")
+DaleB3$date = as.Date(DaleB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = DaleB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = DaleB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("52.5-62.5 kg","52.5-62.5 kg"),
+                     values=c("blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7575) +
+  geom_hline(yintercept=0.7575+0.08, color = "blue") +
+  geom_hline(yintercept=0.7575-0.08, color = "blue") +
+  geom_hline(yintercept=0.8203987, color = "red") +
+  geom_hline(yintercept=0.6946013, color = "red") +
+  ggtitle("Dale set mean")
+
+#Daniel
+#Jan 105-115, Mar 132.5-142.5, Jun 132.5-142.5
+DanielB1 <- DanielB1[DanielB1$Conc.Mean.Velocity != 1.40, ]
+Danielmean <- rbind.data.frame(DanielB1, DanielB2, DanielB3)
+mean(Danielmean$Conc.Mean.Velocity)
+mean(Danielmean$Conc.Mean.Velocity) + 1.5*sd(Danielmean$Conc.Mean.Velocity)
+mean(Danielmean$Conc.Mean.Velocity) - 1.5*sd(Danielmean$Conc.Mean.Velocity)
+
+DanielB1$date = as.Date(DanielB1$date, format = "%d/%m/%y")
+DanielB2$date = as.Date(DanielB2$date, format = "%d/%m/%y")
+DanielB3$date = as.Date(DanielB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = DanielB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = DanielB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = DanielB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("105-115 kg","132.5-142.5 kg","132.5-142.5 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7542857) +
+  geom_hline(yintercept=0.7542857+0.08, color = "blue") +
+  geom_hline(yintercept=0.7542857-0.08, color = "blue") +
+  geom_hline(yintercept=0.9286714, color = "red") +
+  geom_hline(yintercept=0.5799001, color = "red") +
+  ggtitle("Daniel set mean")
+
+#Dunkley
+#Jan 115-125, Mar 115-125, Jun 115-120
+Dunkleymean <- rbind.data.frame(DunkleyB1, DunkleyB2, DunkleyB3)
+mean(Dunkleymean$Conc.Mean.Velocity)
+mean(Dunkleymean$Conc.Mean.Velocity) + 1.5*sd(Dunkleymean$Conc.Mean.Velocity)
+mean(Dunkleymean$Conc.Mean.Velocity) - 1.5*sd(Dunkleymean$Conc.Mean.Velocity)
+
+DunkleyB1$date = as.Date(DunkleyB1$date, format = "%d/%m/%y")
+DunkleyB2$date = as.Date(DunkleyB2$date, format = "%d/%m/%y")
+DunkleyB3$date = as.Date(DunkleyB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = DunkleyB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = DunkleyB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = DunkleyB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("115-125 kg","115-125 kg", "115-125 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.6653333) +
+  geom_hline(yintercept=0.6653333+0.08, color = "blue") +
+  geom_hline(yintercept=0.6653333-0.08, color = "blue") +
+  geom_hline(yintercept=0.7792694, color = "red") +
+  geom_hline(yintercept=0.5513973, color = "red") +
+  ggtitle("Dunkley set mean")
+
+#Duryea
+#Mar 117.5-127.5, Jun 117.5-127.5
+Duryeamean <- rbind.data.frame(DuryeaB2, DuryeaB3)
+mean(Duryeamean$Conc.Mean.Velocity)
+mean(Duryeamean$Conc.Mean.Velocity) + 1.5*sd(Duryeamean$Conc.Mean.Velocity)
+mean(Duryeamean$Conc.Mean.Velocity) - 1.5*sd(Duryeamean$Conc.Mean.Velocity)
+
+DuryeaB2$date = as.Date(DuryeaB2$date, format = "%d/%m/%y")
+DuryeaB3$date = as.Date(DuryeaB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = DuryeaB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = DuryeaB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("117.5-127.5 kg","117.5-127.5 kg"),
+                     values=c("blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.70125) +
+  geom_hline(yintercept=0.70125+0.08, color = "blue") +
+  geom_hline(yintercept=0.70125-0.08, color = "blue") +
+  geom_hline(yintercept=0.7400662, color = "red") +
+  geom_hline(yintercept=0.6624338, color = "red") +
+  ggtitle("Duryea set mean")
+
+#English
+#Jan 125-135, Mar 117.5-127.5, Jun 135-145
+EnglishB1 <- EnglishB1[EnglishB1$Conc.Mean.Velocity != 0.26, ]
+EnglishB3 <- EnglishB3[EnglishB3$Conc.Mean.Velocity != 0.47, ]
+Englishmean <- rbind.data.frame(EnglishB1, EnglishB2, EnglishB3)
+mean(Englishmean$Conc.Mean.Velocity)
+mean(Englishmean$Conc.Mean.Velocity) + 1.5*sd(Englishmean$Conc.Mean.Velocity)
+mean(Englishmean$Conc.Mean.Velocity) - 1.5*sd(Englishmean$Conc.Mean.Velocity)
+
+EnglishB1$date = as.Date(EnglishB1$date, format = "%d/%m/%y")
+EnglishB2$date = as.Date(EnglishB2$date, format = "%d/%m/%y")
+EnglishB3$date = as.Date(EnglishB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = EnglishB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = EnglishB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = EnglishB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("125-135 kg","117.5-127.5 kg", "135-145 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.6403571) +
+  geom_hline(yintercept=0.6403571+0.08, color = "blue") +
+  geom_hline(yintercept=0.6403571-0.08, color = "blue") +
+  geom_hline(yintercept=0.7745512, color = "red") +
+  geom_hline(yintercept=0.5061631, color = "red") +
+  ggtitle("English set mean")
+
+#Garcia
+
+Garciamean <- rbind.data.frame(GarciaB2, GarciaB3)
+mean(Garciamean$Conc.Mean.Velocity)
+mean(Garciamean$Conc.Mean.Velocity) + 1.5*sd(Garciamean$Conc.Mean.Velocity)
+mean(Garciamean$Conc.Mean.Velocity) - 1.5*sd(Garciamean$Conc.Mean.Velocity)
+
+GarciaB2$date = as.Date(GarciaB2$date, format = "%d/%m/%y")
+GarciaB3$date = as.Date(GarciaB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = GarciaB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = GarciaB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("115-125 kg","115-125 kg"),
+                     values=c("blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.706) +
+  geom_hline(yintercept=0.706+0.08, color = "blue") +
+  geom_hline(yintercept=0.706-0.08, color = "blue") +
+  geom_hline(yintercept=0.7835242, color = "red") +
+  geom_hline(yintercept=0.6284758, color = "red") +
+  ggtitle("Garcia set mean")
+
+#Gardner
+#Jan 155-165, Mar 160-170
+GardnerB1 <- GardnerB1[GardnerB1$Conc.Mean.Velocity != 1.20, ]
+Gardnermean <- rbind.data.frame(GardnerB1, GardnerB2)
+mean(Gardnermean$Conc.Mean.Velocity)
+mean(Gardnermean$Conc.Mean.Velocity) + 1.5*sd(Gardnermean$Conc.Mean.Velocity)
+mean(Gardnermean$Conc.Mean.Velocity) - 1.5*sd(Gardnermean$Conc.Mean.Velocity)
+
+GardnerB1$date = as.Date(GardnerB1$date, format = "%d/%m/%y")
+GardnerB2$date = as.Date(GardnerB2$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = GardnerB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = GardnerB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("155-165 kg","160-170 kg"),
+                     values=c("green","blue")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7375) +
+  geom_hline(yintercept=0.7375+0.08, color = "blue") +
+  geom_hline(yintercept=0.7375-0.08, color = "blue") +
+  geom_hline(yintercept=0.7885514, color = "red") +
+  geom_hline(yintercept=0.6864486, color = "red") +
+  ggtitle("Gardner set mean")
+
+#Hannan
+
+mean(HannanB3$Conc.Mean.Velocity)
+mean(HannanB3$Conc.Mean.Velocity) + 1.5*sd(HannanB3$Conc.Mean.Velocity)
+mean(HannanB3$Conc.Mean.Velocity) - 1.5*sd(HannanB3$Conc.Mean.Velocity)
+
+HannanB3$date = as.Date(HannanB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = HannanB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("125-130 kg"),
+                     values=c("red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.68) +
+  geom_hline(yintercept=0.68+0.08, color = "blue") +
+  geom_hline(yintercept=0.68-0.08, color = "blue") +
+  geom_hline(yintercept=0.71, color = "red") +
+  geom_hline(yintercept=0.65, color = "red") +
+  ggtitle("Hannan set mean")
+
+#Hayes
+#Jan 115-125, Mar 107.5-117.5, Jun 120-130
+HayesB3 <- HayesB3[HayesB3$Conc.Mean.Velocity != 1.46, ]
+Hayesmean <- rbind.data.frame(HayesB1, HayesB2, HayesB3)
+mean(Hayesmean$Conc.Mean.Velocity)
+mean(Hayesmean$Conc.Mean.Velocity) + 1.5*sd(Hayesmean$Conc.Mean.Velocity)
+mean(Hayesmean$Conc.Mean.Velocity) - 1.5*sd(Hayesmean$Conc.Mean.Velocity)
+
+HayesB1$date = as.Date(HayesB1$date, format = "%d/%m/%y")
+HayesB2$date = as.Date(HayesB2$date, format = "%d/%m/%y")
+HayesB3$date = as.Date(HayesB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = HayesB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = HayesB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = HayesB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("115-125 kg","107.5-117.5 kg", "120-130 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.6989655) +
+  geom_hline(yintercept=0.6989655+0.08, color = "blue") +
+  geom_hline(yintercept=0.6989655-0.08, color = "blue") +
+  geom_hline(yintercept=0.8420758, color = "red") +
+  geom_hline(yintercept=0.5558553, color = "red") +
+  ggtitle("Hayes set mean")
+
+#Johannisen
+#Jan 132.5-142.5, Mar 135-145, Jun 135-145
+JohannisenB1 <- JohannisenB1[JohannisenB1$Conc.Mean.Velocity != 1.16, ]
+JohannisenB3 <- JohannisenB3[JohannisenB3$Conc.Mean.Velocity != 0.24, ]
+Johannisenmean <- rbind.data.frame(JohannisenB1, JohannisenB2, JohannisenB3)
+mean(Johannisenmean$Conc.Mean.Velocity)
+mean(Johannisenmean$Conc.Mean.Velocity) + 1.5*sd(Johannisenmean$Conc.Mean.Velocity)
+mean(Johannisenmean$Conc.Mean.Velocity) - 1.5*sd(Johannisenmean$Conc.Mean.Velocity)
+
+JohannisenB1$date = as.Date(JohannisenB1$date, format = "%d/%m/%y")
+JohannisenB2$date = as.Date(JohannisenB2$date, format = "%d/%m/%y")
+JohannisenB3$date = as.Date(JohannisenB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = JohannisenB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = JohannisenB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = JohannisenB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("132.5-142.5 kg","135-145 kg", "135-145 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7529032) +
+  geom_hline(yintercept=0.7529032+0.08, color = "blue") +
+  geom_hline(yintercept=0.7529032-0.08, color = "blue") +
+  geom_hline(yintercept=0.9517949, color = "red") +
+  geom_hline(yintercept=0.5540115, color = "red") +
+  ggtitle("Johannisen set mean")
+
+#Keath
+#Jan 115-125, Mar 117.5-127.5
+Keathmean <- rbind.data.frame(KeathB1, KeathB2)
+mean(Keathmean$Conc.Mean.Velocity)
+mean(Keathmean$Conc.Mean.Velocity) + 1.5*sd(Keathmean$Conc.Mean.Velocity)
+mean(Keathmean$Conc.Mean.Velocity) - 1.5*sd(Keathmean$Conc.Mean.Velocity)
+
+KeathB1$date = as.Date(KeathB1$date, format = "%d/%m/%y")
+KeathB2$date = as.Date(KeathB2$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = KeathB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = KeathB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("115-125 kg","117.5-127.5 kg"),
+                     values=c("green","blue")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.5816667) +
+  geom_hline(yintercept=0.5816667+0.08, color = "blue") +
+  geom_hline(yintercept=0.5816667-0.08, color = "blue") +
+  geom_hline(yintercept=0.6510028, color = "red") +
+  geom_hline(yintercept=0.5123305, color = "red") +
+  ggtitle("Keath set mean")
+
+#Khamis
+#Jan 110-120, Mar 132.5-142.5, Jun 152.5-162.5
+KhamisB1 <- KhamisB1[KhamisB1$Conc.Mean.Velocity != 1.00, ]
+Khamismean <- rbind.data.frame(KhamisB1, KhamisB2, KhamisB3)
+mean(Khamismean$Conc.Mean.Velocity)
+mean(Khamismean$Conc.Mean.Velocity) + 1.5*sd(Khamismean$Conc.Mean.Velocity)
+mean(Khamismean$Conc.Mean.Velocity) - 1.5*sd(Khamismean$Conc.Mean.Velocity)
+
+KhamisB1$date = as.Date(KhamisB1$date, format = "%d/%m/%y")
+KhamisB2$date = as.Date(KhamisB2$date, format = "%d/%m/%y")
+KhamisB3$date = as.Date(KhamisB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = KhamisB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = KhamisB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = KhamisB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("110-120 kg","132.5-142.5 kg", "152.5-162.5 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7072222) +
+  geom_hline(yintercept=0.7072222+0.08, color = "blue") +
+  geom_hline(yintercept=0.7072222-0.08, color = "blue") +
+  geom_hline(yintercept=0.8730468, color = "red") +
+  geom_hline(yintercept=0.5413976, color = "red") +
+  ggtitle("Khamis set mean")
+
+#Liberatore
+#Jan 95-105, Mar 92.5-102.5, Jun 102.5-112.5
+LiberatoreB3 <- LiberatoreB3[LiberatoreB3$Conc.Mean.Velocity != 1.02, ]
+LiberatoreB3 <- LiberatoreB3[LiberatoreB3$Conc.Mean.Velocity != 0.47, ]
+Liberatoremean <- rbind.data.frame(LiberatoreB1, LiberatoreB2, LiberatoreB3)
+mean(Liberatoremean$Conc.Mean.Velocity)
+mean(Liberatoremean$Conc.Mean.Velocity) + 1.5*sd(Liberatoremean$Conc.Mean.Velocity)
+mean(Liberatoremean$Conc.Mean.Velocity) - 1.5*sd(Liberatoremean$Conc.Mean.Velocity)
+
+LiberatoreB1$date = as.Date(LiberatoreB1$date, format = "%d/%m/%y")
+LiberatoreB2$date = as.Date(LiberatoreB2$date, format = "%d/%m/%y")
+LiberatoreB3$date = as.Date(LiberatoreB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = LiberatoreB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = LiberatoreB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = LiberatoreB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("95-105 kg","92.5-102.5 kg", "102.5-112.5 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7443478) +
+  geom_hline(yintercept=0.7443478+0.08, color = "blue") +
+  geom_hline(yintercept=0.7443478-0.08, color = "blue") +
+  geom_hline(yintercept=0.8850477, color = "red") +
+  geom_hline(yintercept=0.603648, color = "red") +
+  ggtitle("Liberatore set mean")
+
+#Lipinski
+#Jan 97.5-107.5, Mar 77.5-87.5, Jun 77.5-87.5
+LipinskiB1 <- LipinskiB1[LipinskiB1$Conc.Mean.Velocity != 0.49, ]
+Lipinskimean <- rbind.data.frame(LipinskiB1, LipinskiB2, LipinskiB3)
+mean(Lipinskimean$Conc.Mean.Velocity)
+mean(Lipinskimean$Conc.Mean.Velocity) + 1.5*sd(Lipinskimean$Conc.Mean.Velocity)
+mean(Lipinskimean$Conc.Mean.Velocity) - 1.5*sd(Lipinskimean$Conc.Mean.Velocity)
+
+LipinskiB1$date = as.Date(LipinskiB1$date, format = "%d/%m/%y")
+LipinskiB2$date = as.Date(LipinskiB2$date, format = "%d/%m/%y")
+LipinskiB3$date = as.Date(LipinskiB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = LipinskiB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = LipinskiB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = LipinskiB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("97.5-107.5 kg","77.5-87.5 kg", "77.5-87.5 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7388235) +
+  geom_hline(yintercept=0.7388235+0.08, color = "blue") +
+  geom_hline(yintercept=0.7388235-0.08, color = "blue") +
+  geom_hline(yintercept=0.8979122, color = "red") +
+  geom_hline(yintercept=0.5797349, color = "red") +
+  ggtitle("Lipinski set mean")
+
+#Martin
+#Jan 135-145, Mar 132.5-142.5
+MartinB2 <- MartinB2[MartinB2$Conc.Mean.Velocity != 0.45, ]
+Martinmean <- rbind.data.frame(MartinB1, MartinB2)
+mean(Martinmean$Conc.Mean.Velocity)
+mean(Martinmean$Conc.Mean.Velocity) + 1.5*sd(Martinmean$Conc.Mean.Velocity)
+mean(Martinmean$Conc.Mean.Velocity) - 1.5*sd(Martinmean$Conc.Mean.Velocity)
+
+MartinB1$date = as.Date(MartinB1$date, format = "%d/%m/%y")
+MartinB2$date = as.Date(MartinB2$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = MartinB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = MartinB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("135-145 kg","132.5-142.5 kg"),
+                     values=c("green","blue")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.6433333) +
+  geom_hline(yintercept=0.6433333+0.08, color = "blue") +
+  geom_hline(yintercept=0.6433333-0.08, color = "blue") +
+  geom_hline(yintercept=0.7590377, color = "red") +
+  geom_hline(yintercept=0.527629, color = "red") +
+  ggtitle("Martin set mean")
+
+#Mclean
+#Jun 112.5-122.5
+McleanB3 <- McleanB3[McleanB3$Conc.Mean.Velocity != 0.31, ]
+McleanB3 <- McleanB3[McleanB3$Conc.Mean.Velocity != 0.44, ]
+mean(McleanB3$Conc.Mean.Velocity)
+mean(McleanB3$Conc.Mean.Velocity) + 1.5*sd(McleanB3$Conc.Mean.Velocity)
+mean(McleanB3$Conc.Mean.Velocity) - 1.5*sd(McleanB3$Conc.Mean.Velocity)
+
+McleanB3$date = as.Date(McleanB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = McleanB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("112.5-122.5 kg"),
+                     values=c("red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.5525) +
+  geom_hline(yintercept=0.5525+0.08, color = "blue") +
+  geom_hline(yintercept=0.5525-0.08, color = "blue") +
+  geom_hline(yintercept=0.6064096, color = "red") +
+  geom_hline(yintercept=0.4985904, color = "red") +
+  ggtitle("Mclean set mean")
+
+#McNeil
+#Mar 82.5-92.5
+McNeilB2 <- McNeilB2[McNeilB2$Conc.Mean.Velocity != 0.25, ]
+McNeilB2 <- McNeilB2[McNeilB2$Conc.Mean.Velocity != 0.24, ]
+McNeilB2 <- McNeilB2[McNeilB2$Conc.Mean.Velocity != 1.03, ]
+mean(McNeilB2$Conc.Mean.Velocity)
+mean(McNeilB2$Conc.Mean.Velocity) + 1.5*sd(McNeilB2$Conc.Mean.Velocity)
+mean(McNeilB2$Conc.Mean.Velocity) - 1.5*sd(McNeilB2$Conc.Mean.Velocity)
+
+McNeilB2$date = as.Date(McNeilB2$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = McNeilB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("82.5-92.5 kg"),
+                     values=c("blue")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7927273) +
+  geom_hline(yintercept=0.7927273+0.08, color = "blue") +
+  geom_hline(yintercept=0.7927273-0.08, color = "blue") +
+  geom_hline(yintercept=0.8990245, color = "red") +
+  geom_hline(yintercept=0.6864301, color = "red") +
+  ggtitle("McNeil set mean")
+
+#Naughton
+#Jan 120-130, Mar 112.5-122.5, Jun 112.5-122.5
+Naughtonmean <- rbind.data.frame(NaughtonB1, NaughtonB2, NaughtonB3)
+mean(Naughtonmean$Conc.Mean.Velocity)
+mean(Naughtonmean$Conc.Mean.Velocity) + 1.5*sd(Naughtonmean$Conc.Mean.Velocity)
+mean(Naughtonmean$Conc.Mean.Velocity) - 1.5*sd(Naughtonmean$Conc.Mean.Velocity)
+
+NaughtonB1$date = as.Date(NaughtonB1$date, format = "%d/%m/%y")
+NaughtonB2$date = as.Date(NaughtonB2$date, format = "%d/%m/%y")
+NaughtonB3$date = as.Date(NaughtonB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = NaughtonB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = NaughtonB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = NaughtonB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("120-130 kg","112.5-122.5 kg", "112.5-122.5 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7165217) +
+  geom_hline(yintercept=0.7165217+0.08, color = "blue") +
+  geom_hline(yintercept=0.7165217-0.08, color = "blue") +
+  geom_hline(yintercept=0.8571331, color = "red") +
+  geom_hline(yintercept=0.5759104, color = "red") +
+  ggtitle("Naughton set mean")
+
+#Richards
+#Jan 120-130, Mar 125-135, Jun 125-135
+RichardsB3 <- RichardsB3[RichardsB3$Conc.Mean.Velocity != 0.45, ]
+Richardsmean <- rbind.data.frame(RichardsB1, RichardsB2, RichardsB3)
+mean(Richardsmean$Conc.Mean.Velocity)
+mean(Richardsmean$Conc.Mean.Velocity) + 1.5*sd(Richardsmean$Conc.Mean.Velocity)
+mean(Richardsmean$Conc.Mean.Velocity) - 1.5*sd(Richardsmean$Conc.Mean.Velocity)
+
+RichardsB1$date = as.Date(RichardsB1$date, format = "%d/%m/%y")
+RichardsB2$date = as.Date(RichardsB2$date, format = "%d/%m/%y")
+RichardsB3$date = as.Date(RichardsB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = RichardsB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = RichardsB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = RichardsB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("120-130 kg","125-135 kg", "125-135 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.68) +
+  geom_hline(yintercept=0.68+0.08, color = "blue") +
+  geom_hline(yintercept=0.68-0.08, color = "blue") +
+  geom_hline(yintercept=0.8536376, color = "red") +
+  geom_hline(yintercept=0.5063624, color = "red") +
+  ggtitle("Richards set mean")
+
+#Schache
+#Jan 102.5-112.5, Mar 110-120, Jun 117.5-127.5
+SchacheB3 <- SchacheB3[SchacheB3$Conc.Mean.Velocity != 0.17, ]
+SchacheB3 <- SchacheB3[SchacheB3$Conc.Mean.Velocity != 0.48, ]
+Schachemean <- rbind.data.frame(SchacheB2, SchacheB3)
+mean(Schachemean$Conc.Mean.Velocity)
+mean(Schachemean$Conc.Mean.Velocity) + 1.5*sd(Schachemean$Conc.Mean.Velocity)
+mean(Schachemean$Conc.Mean.Velocity) - 1.5*sd(Schachemean$Conc.Mean.Velocity)
+
+SchacheB2$date = as.Date(SchacheB2$date, format = "%d/%m/%y")
+SchacheB3$date = as.Date(SchacheB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = SchacheB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = SchacheB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("110-120 kg","117.5-127.5 kg"),
+                     values=c("blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.6892) +
+  geom_hline(yintercept=0.6892+0.08, color = "blue") +
+  geom_hline(yintercept=0.6892-0.08, color = "blue") +
+  geom_hline(yintercept=0.7649364, color = "red") +
+  geom_hline(yintercept=0.6134636, color = "red") +
+  ggtitle("Schache set mean")
+
+#Scott
+#Mar 77.5-87.5, Jun 105-115
+ScottB3 <- ScottB3[ScottB3$Conc.Mean.Velocity != 0.24, ]
+ScottB3 <- ScottB3[ScottB3$Conc.Mean.Velocity != 0.45, ]
+Scottmean <- rbind.data.frame(ScottB2, ScottB3)
+mean(Scottmean$Conc.Mean.Velocity)
+mean(Scottmean$Conc.Mean.Velocity) + 1.5*sd(Scottmean$Conc.Mean.Velocity)
+mean(Scottmean$Conc.Mean.Velocity) - 1.5*sd(Scottmean$Conc.Mean.Velocity)
+
+ScottB2$date = as.Date(ScottB2$date, format = "%d/%m/%y")
+ScottB3$date = as.Date(ScottB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = ScottB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = ScottB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("80-85 kg","105-115 kg"),
+                     values=c("blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7014815) +
+  geom_hline(yintercept=0.7014815+0.08, color = "blue") +
+  geom_hline(yintercept=0.7014815-0.08, color = "blue") +
+  geom_hline(yintercept=0.8228228, color = "red") +
+  geom_hline(yintercept=0.5801402, color = "red") +
+  ggtitle("Scott set mean")
+
+#Smith
+
+mean(SmithB2$Conc.Mean.Velocity)
+mean(SmithB2$Conc.Mean.Velocity) + 1.5*sd(SmithB2$Conc.Mean.Velocity)
+mean(SmithB2$Conc.Mean.Velocity) - 1.5*sd(SmithB2$Conc.Mean.Velocity)
+
+SmithB2$date = as.Date(SmithB2$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = SmithB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("130-140 kg"),
+                     values=c("blue")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.63) +
+  geom_hline(yintercept=0.63+0.08, color = "blue") +
+  geom_hline(yintercept=0.63-0.08, color = "blue") +
+  geom_hline(yintercept=0.6936396, color = "red") +
+  geom_hline(yintercept=0.5663604, color = "red") +
+  ggtitle("Smith set mean")
+
+#Sweet
+#Mar 102.5-112.5, Jun 120-130
+SweetB2 <- SweetB2[SweetB2$Conc.Mean.Velocity != 0.23, ]
+Sweetmean <- rbind.data.frame(SweetB2, SweetB3)
+mean(Sweetmean$Conc.Mean.Velocity)
+mean(Sweetmean$Conc.Mean.Velocity) + 1.5*sd(Sweetmean$Conc.Mean.Velocity)
+mean(Sweetmean$Conc.Mean.Velocity) - 1.5*sd(Sweetmean$Conc.Mean.Velocity)
+
+SweetB2$date = as.Date(SweetB2$date, format = "%d/%m/%y")
+SweetB3$date = as.Date(SweetB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = SweetB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = SweetB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("102.5-112.5 kg","120-130 kg"),
+                     values=c("blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.64) +
+  geom_hline(yintercept=0.64+0.08, color = "blue") +
+  geom_hline(yintercept=0.64-0.08, color = "blue") +
+  geom_hline(yintercept=0.7586381, color = "red") +
+  geom_hline(yintercept=0.5213619, color = "red") +
+  ggtitle("Sweet set mean")
+
+#Treloar
+#Jan 185-195, Mar 150-160, Jun 150-160
+TreloarB1 <- TreloarB1[TreloarB1$Conc.Mean.Velocity != 0.48, ]
+TreloarB3 <- TreloarB3[TreloarB3$Conc.Mean.Velocity != 0.17, ]
+Treloarmean <- rbind.data.frame(TreloarB1, TreloarB2, TreloarB3)
+mean(Treloarmean$Conc.Mean.Velocity)
+mean(Treloarmean$Conc.Mean.Velocity) + 1.5*sd(Treloarmean$Conc.Mean.Velocity)
+mean(Treloarmean$Conc.Mean.Velocity) - 1.5*sd(Treloarmean$Conc.Mean.Velocity)
+
+TreloarB1$date = as.Date(TreloarB1$date, format = "%d/%m/%y")
+TreloarB2$date = as.Date(TreloarB2$date, format = "%d/%m/%y")
+TreloarB3$date = as.Date(TreloarB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = TreloarB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = TreloarB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = TreloarB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("185-195 kg","150-160 kg", "150-160 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.6742857) +
+  geom_hline(yintercept=0.6742857+0.08, color = "blue") +
+  geom_hline(yintercept=0.6742857-0.08, color = "blue") +
+  geom_hline(yintercept=0.8058068, color = "red") +
+  geom_hline(yintercept=0.5427646, color = "red") +
+  ggtitle("Treloar set mean")
+
+#Ugle-Hagan
+#Mar 95-105, Jun 125-135
+Ugle_Haganmean <- rbind.data.frame(Ugle_HaganB2, Ugle_HaganB3)
+mean(Ugle_Haganmean$Conc.Mean.Velocity)
+mean(Ugle_Haganmean$Conc.Mean.Velocity) + 1.5*sd(Ugle_Haganmean$Conc.Mean.Velocity)
+mean(Ugle_Haganmean$Conc.Mean.Velocity) - 1.5*sd(Ugle_Haganmean$Conc.Mean.Velocity)
+
+Ugle_HaganB2$date = as.Date(Ugle_HaganB2$date, format = "%d/%m/%y")
+Ugle_HaganB3$date = as.Date(Ugle_HaganB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = Ugle_HaganB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = Ugle_HaganB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("95-105 kg","125-135 kg"),
+                     values=c("blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7528571) +
+  geom_hline(yintercept=0.7528571+0.08, color = "blue") +
+  geom_hline(yintercept=0.7528571-0.08, color = "blue") +
+  geom_hline(yintercept=0.9387431, color = "red") +
+  geom_hline(yintercept=0.5669712, color = "red") +
+  ggtitle("Ugle-Hagan set mean")
+
+#Vandermeer
+
+Vandermeermean <- rbind.data.frame(VandermeerB2, VandermeerB3)
+mean(Vandermeermean$Conc.Mean.Velocity)
+mean(Vandermeermean$Conc.Mean.Velocity) + 1.5*sd(Vandermeermean$Conc.Mean.Velocity)
+mean(Vandermeermean$Conc.Mean.Velocity) - 1.5*sd(Vandermeermean$Conc.Mean.Velocity)
+
+VandermeerB2$date = as.Date(VandermeerB2$date, format = "%d/%m/%y")
+VandermeerB3$date = as.Date(VandermeerB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = VandermeerB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = VandermeerB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("105-115 kg","105-115 kg"),
+                     values=c("blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.665) +
+  geom_hline(yintercept=0.665+0.08, color = "blue") +
+  geom_hline(yintercept=0.665-0.08, color = "blue") +
+  geom_hline(yintercept=0.7339021, color = "red") +
+  geom_hline(yintercept=0.5960979, color = "red") +
+  ggtitle("Vandermeer set mean")
+
+#Weightman
+#Mar 105-115, Jun 92.5-102.5
+WeightmanB3 <- WeightmanB3[WeightmanB3$Conc.Mean.Velocity != 1.41, ]
+Weightmanmean <- rbind.data.frame(WeightmanB2, WeightmanB3)
+mean(Weightmanmean$Conc.Mean.Velocity)
+mean(Weightmanmean$Conc.Mean.Velocity) + 1.5*sd(Weightmanmean$Conc.Mean.Velocity)
+mean(Weightmanmean$Conc.Mean.Velocity) - 1.5*sd(Weightmanmean$Conc.Mean.Velocity)
+
+WeightmanB2$date = as.Date(WeightmanB2$date, format = "%d/%m/%y")
+WeightmanB3$date = as.Date(WeightmanB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = WeightmanB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = WeightmanB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("105-115 kg","92.5-102.5 kg"),
+                     values=c("blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7071429) +
+  geom_hline(yintercept=0.7071429+0.08, color = "blue") +
+  geom_hline(yintercept=0.7071429-0.08, color = "blue") +
+  geom_hline(yintercept=0.8251713, color = "red") +
+  geom_hline(yintercept=0.5891144, color = "red") +
+  ggtitle("Weightman set mean")
+
+#West
+#Jan 92.5-102.5, Mar 115-125, Jun 112.5-122.5
+Westmean <- rbind.data.frame(WestB1, WestB2, WestB3)
+mean(Westmean$Conc.Mean.Velocity)
+mean(Westmean$Conc.Mean.Velocity) + 1.5*sd(Westmean$Conc.Mean.Velocity)
+mean(Westmean$Conc.Mean.Velocity) - 1.5*sd(Westmean$Conc.Mean.Velocity)
+
+WestB1$date = as.Date(WestB1$date, format = "%d/%m/%y")
+WestB2$date = as.Date(WestB2$date, format = "%d/%m/%y")
+WestB3$date = as.Date(WestB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = WestB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = WestB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = WestB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("92.5-102.5 kg","115-125 kg", "112.5-122.5 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7156) +
+  geom_hline(yintercept=0.7156+0.08, color = "blue") +
+  geom_hline(yintercept=0.7156-0.08, color = "blue") +
+  geom_hline(yintercept=0.8436195, color = "red") +
+  geom_hline(yintercept=0.5875805, color = "red") +
+  ggtitle("West set mean")
+
+#Williams
+#Jan 102.5-112.5, Mar 132.5-142.5, Jun 140-150
+WilliamsB1 <- WilliamsB1[WilliamsB1$Conc.Mean.Velocity != 1.02, ]
+WilliamsB1 <- WilliamsB1[WilliamsB1$Conc.Mean.Velocity != 0.23, ]
+WilliamsB3 <- WilliamsB3[WilliamsB3$Conc.Mean.Velocity != 0.25, ]
+Williamsmean <- rbind.data.frame(WilliamsB1, WilliamsB2, WilliamsB3)
+mean(Williamsmean$Conc.Mean.Velocity)
+mean(Williamsmean$Conc.Mean.Velocity) + 1.5*sd(Williamsmean$Conc.Mean.Velocity)
+mean(Williamsmean$Conc.Mean.Velocity) - 1.5*sd(Williamsmean$Conc.Mean.Velocity)
+
+WilliamsB1$date = as.Date(WilliamsB1$date, format = "%d/%m/%y")
+WilliamsB2$date = as.Date(WilliamsB2$date, format = "%d/%m/%y")
+WilliamsB3$date = as.Date(WilliamsB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = WilliamsB1,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = WilliamsB2,
+             aes(shape = exercise, col = "green"), size = 3) +
+  geom_point(data = WilliamsB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("102.5-112.5 kg","132.5-142.5 kg", "140-150 kg"),
+                     values=c("green","blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7276923) +
+  geom_hline(yintercept=0.7276923+0.08, color = "blue") +
+  geom_hline(yintercept=0.7276923-0.08, color = "blue") +
+  geom_hline(yintercept=0.8656471, color = "red") +
+  geom_hline(yintercept=0.5897375, color = "red") +
+  ggtitle("Williams set mean")
+
+#Wood
+
+WoodB2 <- WoodB2[WoodB2$Conc.Mean.Velocity != 1.39, ]
+WoodB2 <- WoodB2[WoodB2$Conc.Mean.Velocity != 0.43, ]
+WoodB2 <- WoodB2[WoodB2$Conc.Mean.Velocity != 0.46, ]
+WoodB3 <- WoodB3[WoodB3$Conc.Mean.Velocity != 0.26, ]
+WoodB3 <- WoodB3[WoodB3$Conc.Mean.Velocity != 0.46, ]
+Woodmean <- rbind.data.frame(WoodB2, WoodB3)
+mean(Woodmean$Conc.Mean.Velocity)
+mean(Woodmean$Conc.Mean.Velocity) + 1.5*sd(Woodmean$Conc.Mean.Velocity)
+mean(Woodmean$Conc.Mean.Velocity) - 1.5*sd(Woodmean$Conc.Mean.Velocity)
+
+WoodB2$date = as.Date(WoodB2$date, format = "%d/%m/%y")
+WoodB3$date = as.Date(WoodB3$date, format = "%d/%m/%y")
+
+ggplot(NULL, aes(date, Conc.Mean.Velocity)) +
+  geom_point(data = WoodB2,
+             aes(shape = exercise, col = "blue"), size = 3) +
+  geom_point(data = WoodB3,
+             aes(shape = exercise, col = "red"), size = 3) +
+  ylim(0.4, 1) +
+  labs(shape="Exercise",colour="Weight") +
+  scale_color_manual(name="Weight", labels=c("105-115 kg","105-115 kg"),
+                     values=c("blue","red")) +
+  xlab("Date") +
+  ylab("Concentric Mean Velocity") +
+  guides(colour = guide_legend(order = 1),
+         shape = guide_legend(order = 2)) +
+  geom_hline(yintercept=0.7757143) +
+  geom_hline(yintercept=0.7757143+0.08, color = "blue") +
+  geom_hline(yintercept=0.7757143-0.08, color = "blue") +
+  geom_hline(yintercept=0.9502183, color = "red") +
+  geom_hline(yintercept=0.6012103, color = "red") +
+  ggtitle("Wood set mean")
+
+#Young
